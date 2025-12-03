@@ -143,7 +143,7 @@
   }
 
   .cyber-grid {
-    background-image: 
+    background-image:
       linear-gradient(hsl(var(--primary) / 0.03) 1px, transparent 1px),
       linear-gradient(90deg, hsl(var(--primary) / 0.03) 1px, transparent 1px);
     background-size: 50px 50px;
@@ -184,4 +184,127 @@ html {
 
 .glitch:hover {
   animation: glitch 0.3s ease infinite;
+}
+
+/* Animation for partner slider */
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-left {
+  animation: slide-left 20s linear infinite;
+}
+
+.animate-slide-right {
+  animation: slide-right 20s linear infinite;
+}
+
+/* Animation for floating social media icons */
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.social-icon {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: calc(var(--index, 0) * 0.2s);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.2),
+    0 6px 20px rgba(0, 0, 0, 0.19),
+    0 0 20px hsl(180 100% 50% / 0.3);
+}
+
+.social-icon::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: -5px;
+  bottom: -5px;
+  background: inherit;
+  border-radius: 50%;
+  filter: blur(15px);
+  opacity: 0.5;
+  z-index: -1;
+  transform: translateZ(-10px);
+}
+
+.social-icon:hover {
+  transform: translateY(-5px) scale(1.2) rotateY(20deg);
+}
+
+/* 3D Notification Styles */
+.notification-3d-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.notification-3d-content {
+  position: relative;
+  transform: translateZ(20px) rotateX(10deg) rotateY(5deg);
+  transition: transform 0.3s ease;
+}
+
+.notification-3d-content:hover {
+  transform: translateZ(30px) rotateX(0) rotateY(0);
+}
+
+/* 3D text effect for notification message */
+.notification-3d-text {
+  position: relative;
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+/* Additional 3D effect */
+@keyframes float-3d {
+  0% {
+    transform: translateY(0) rotateX(5deg) rotateY(5deg);
+  }
+  50% {
+    transform: translateY(-10px) rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: translateY(0) rotateX(5deg) rotateY(5deg);
+  }
+}
+
+.animate-float-3d {
+  animation: float-3d 3s ease-in-out infinite;
 }
