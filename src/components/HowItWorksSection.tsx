@@ -41,10 +41,10 @@ const steps = [
 
 const HowItWorksSection = () => {
   return (
-    <section id="how-it-works" className="section-spacing border-t border-border">
+    <section id="how-it-works" className="section-spacing border-t border-primary/20">
       <div className="container-grid">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-primary">How It Works</p>
+          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-secondary">How It Works</p>
           <h2 className="section-title text-foreground">
             From Upload to Earnings
           </h2>
@@ -56,27 +56,22 @@ const HowItWorksSection = () => {
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {steps.map((item, index) => (
             <div key={index} className="group relative">
-              <div className="card-base h-full transition-colors hover:border-primary/30">
+              <div className="card-cyber h-full transition-all hover:border-primary/50">
                 <div className="mb-4 flex items-center gap-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-sm bg-primary/10 border border-primary/30">
                     <item.icon className="h-5 w-5 text-primary" />
                   </div>
-                  <span className="font-display text-sm font-bold text-muted-foreground">
-                    Step {item.step}
+                  <span className="font-display text-2xl font-bold text-primary/30">
+                    {item.step}
                   </span>
                 </div>
-                <h3 className="font-display text-lg font-semibold text-foreground">
+                <h3 className="font-display text-lg font-semibold text-foreground uppercase tracking-wider">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground">
                   {item.description}
                 </p>
               </div>
-              
-              {/* Connector line for desktop */}
-              {index < steps.length - 1 && index !== 2 && (
-                <div className="absolute -right-3 top-1/2 hidden h-px w-6 bg-border lg:block" />
-              )}
             </div>
           ))}
         </div>
