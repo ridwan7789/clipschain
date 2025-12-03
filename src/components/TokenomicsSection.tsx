@@ -1,12 +1,10 @@
 import { Wallet, Zap, Gift, ArrowUpRight } from "lucide-react";
 
 const distribution = [
-  { label: "Ecosystem", percentage: 38, color: "hsl(180, 100%, 50%)" },
-  { label: "Treasury", percentage: 20, color: "hsl(280, 100%, 60%)" },
-  { label: "Team", percentage: 15, color: "hsl(320, 100%, 60%)" },
-  { label: "Seed/Private", percentage: 12, color: "hsl(152, 100%, 50%)" },
-  { label: "Public", percentage: 10, color: "hsl(200, 100%, 60%)" },
-  { label: "Liquidity", percentage: 5, color: "hsl(60, 100%, 50%)" },
+  { label: "Ecosystem & Rewards", percentage: 25, color: "hsl(180, 100%, 50%)" },
+  { label: "Team & Advisors", percentage: 5, color: "hsl(320, 100%, 60%)" },
+  { label: "Treasury", percentage: 10, color: "hsl(280, 100%, 60%)" },
+  { label: "Liquidity", percentage: 60, color: "hsl(60, 100%, 50%)" },
 ];
 
 const utilities = [
@@ -21,17 +19,17 @@ const TokenomicsSection = () => {
     const radius = 80;
     const cx = 100;
     const cy = 100;
-    
+
     const startRad = (startAngle - 90) * Math.PI / 180;
     const endRad = (endAngle - 90) * Math.PI / 180;
-    
+
     const x1 = cx + radius * Math.cos(startRad);
     const y1 = cy + radius * Math.sin(startRad);
     const x2 = cx + radius * Math.cos(endRad);
     const y2 = cy + radius * Math.sin(endRad);
-    
+
     const largeArcFlag = endAngle - startAngle > 180 ? 1 : 0;
-    
+
     return `M ${cx} ${cy} L ${x1} ${y1} A ${radius} ${radius} 0 ${largeArcFlag} 1 ${x2} ${y2} Z`;
   };
 
@@ -87,7 +85,7 @@ const TokenomicsSection = () => {
             <div className="mt-8 grid grid-cols-2 gap-x-8 gap-y-3 sm:grid-cols-3">
               {distribution.map((item, index) => (
                 <div key={index} className="flex items-center gap-2">
-                  <span 
+                  <span
                     className="h-3 w-3 rounded-sm"
                     style={{ backgroundColor: item.color, boxShadow: `0 0 8px ${item.color}` }}
                   />
