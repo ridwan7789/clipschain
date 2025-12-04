@@ -8,7 +8,6 @@ import TokenomicsSection from "@/components/TokenomicsSection";
 import RoadmapSection from "@/components/RoadmapSection";
 import SecuritySection from "@/components/SecuritySection";
 import PartnersSection from "@/components/PartnersSection";
-import TokenAddress from "@/components/TokenAddress";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -22,7 +21,6 @@ const Index = () => {
         <SolutionsSection />
         <HowItWorksSection />
         <TokenomicsSection />
-        <TokenAddress />
         <RoadmapSection />
         <SecuritySection />
         <PartnersSection />
