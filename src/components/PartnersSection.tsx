@@ -1,5 +1,5 @@
 const partners = [
-  { name: "Binance", logo: "https://cryptologos.cc/logos/bnb-bnb-logo.svg" },
+  { name: "Solana", logo: "https://cryptologos.cc/logos/solana-sol-logo.svg" },
   { name: "Ankr", logo: "https://cryptologos.cc/logos/ankr-ankr-logo.svg" },
   { name: "Chainlink", logo: "https://cryptologos.cc/logos/chainlink-link-logo.svg" },
   { name: "The Graph", logo: "https://cryptologos.cc/logos/the-graph-grt-logo.svg" },

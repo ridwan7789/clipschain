@@ -23,7 +23,7 @@ const steps = [
     icon: Coins,
     step: "04",
     title: "Mint DCA NFT",
-    description: "Your clip is minted as a Digital Clip Asset on BNB Chain.",
+    description: "Your clip is minted as a Digital Clip Asset on Solana.",
   },
   {
     icon: ArrowLeftRight,

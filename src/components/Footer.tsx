@@ -62,6 +62,13 @@ const footerLinks = [
     ],
   },
   {
+    title: "Tokens",
+    links: [
+      { label: "$CLIP Token", href: "#" },
+      { label: "Buy on Pump.fun", href: "https://pump.fun" },
+    ],
+  },
+  {
     title: "Community",
     links: [
       { label: "Telegram", href: "https://t.me/ClipsChain" },
@@ -104,6 +111,14 @@ const Footer = () => {
             Join the Clipchain community and start earning from your creativity.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="https://pump.fun"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
+            >
+              BUY ON PUMPFUN
+            </a>
             <button
               onClick={(e) => {
                 e.preventDefault();
@@ -179,7 +194,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="flex flex-col items-center justify-between gap-4 py-6 sm:flex-row">
           <p className="text-sm text-muted-foreground">
-            © 2024 Clipchain. All rights reserved.
+            © 2026 Clipchain. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-sm text-muted-foreground transition-colors hover:text-primary">

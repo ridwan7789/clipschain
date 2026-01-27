@@ -8,7 +8,7 @@ const securityFeatures = [
   },
   {
     icon: Shield,
-    title: "BEP-721 & BEP-1155",
+    title: "Token Standards",
     description: "Industry-standard token protocols",
   },
   {
@@ -61,8 +61,8 @@ const SecuritySection = () => {
             {/* Features Grid */}
             <div className="grid gap-4 sm:grid-cols-2">
               {securityFeatures.map((feature, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className={`flex items-start gap-3 rounded-sm bg-muted/50 p-4 border border-primary/20 ${
                     index === securityFeatures.length - 1 ? 'sm:col-span-2 sm:max-w-[50%]' : ''
                   }`}

@@ -15,7 +15,7 @@ const AboutSection = () => {
               Clipchain is a decentralized SocialFi platform that empowers creators to mint their short-form video content as Digital Clip Assets (DCA). Every clip becomes a verifiable on-chain asset with transparent royalty distribution.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-              Built on BNB Smart Chain, Clipchain combines the virality of social media with blockchain-powered monetization, giving creators true ownership over their content.
+              Built on Solana, Clipchain combines the virality of social media with blockchain-powered monetization, giving creators true ownership over their content.
             </p>
 
             {/* Features */}
@@ -55,7 +55,7 @@ const AboutSection = () => {
                   </div>
                   <div className="flex-1">
                     <p className="font-display font-semibold text-foreground uppercase text-sm tracking-wider">Digital Clip Asset</p>
-                    <p className="text-sm text-muted-foreground">BEP-721 Standard</p>
+                    <p className="text-sm text-muted-foreground">SPL Token Standard</p>
                   </div>
                   <span className="rounded-sm bg-primary/20 border border-primary/30 px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary">Minted</span>
                 </div>
