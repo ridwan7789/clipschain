@@ -1,5 +1,5 @@
 import { ArrowRight, FileText, Users } from "lucide-react";
-import appMockup from "@/assets/app-mockup.png";
+import appMockup from "@/assets/prev.jpeg";
 import Notification3D from "./Notification3D";
 import { useState } from "react";
 
