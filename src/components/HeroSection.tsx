@@ -99,6 +99,26 @@ const HeroSection = () => {
                 </button>
               </div>
             </div>
+
+            {/* Action Buttons */}
+            <div className="mt-6 flex flex-wrap gap-4">
+              <a
+                href="https://www.dextools.io/app/solana/pair-explorer/G3ZKrTb9FpbCx8mYCZSkLFbTYyXNWX29yE37FPtmpump"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary flex-1 min-w-[150px]"
+              >
+                CLIP Chart
+              </a>
+              <a
+                href="https://pump.fun/coin/G3ZKrTb9FpbCx8mYCZSkLFbTYyXNWX29yE37FPtmpump"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary flex-1 min-w-[150px]"
+              >
+                Buy CLIP
+              </a>
+            </div>
           </div>
 
           {/* Mockup */}
