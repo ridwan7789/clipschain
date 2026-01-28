@@ -80,6 +80,25 @@ const HeroSection = () => {
                 <p className="mt-1 text-sm text-muted-foreground uppercase tracking-wider">Digital Assets</p>
               </div>
             </div>
+
+            {/* Contract Address */}
+            <div className="mt-8">
+              <p className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-2">CLIP Official CA:</p>
+              <div className="flex items-center gap-2">
+                <code className="flex-1 break-all rounded-md bg-primary/10 px-4 py-2 font-mono text-sm font-semibold text-primary border border-primary/30">
+                  G3ZKrTb9FpbCx8mYCZSkLFbTYyXNWX29yE37FPtmpump
+                </code>
+                <button
+                  onClick={() => {
+                    navigator.clipboard.writeText('G3ZKrTb9FpbCx8mYCZSkLFbTYyXNWX29yE37FPtmpump');
+                    showNotification('Contract address copied to clipboard!');
+                  }}
+                  className="btn-secondary shrink-0"
+                >
+                  Copy
+                </button>
+              </div>
+            </div>
           </div>
 
           {/* Mockup */}
